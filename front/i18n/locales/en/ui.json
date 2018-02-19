@@ -1,0 +1,42 @@
+{
+  "hoge": "hogehogehogehoge",
+  "username": {
+    "label": "User name"
+  },
+  "email": {
+    "label": "Email Address",
+    "placeholder": "Enter your email address...",
+    "error": {
+      "format": "The email address entered is in an incorrect format.",
+      "verification": {
+        "header": "Does not match the email address registered beforehand",
+        "content": "Please check again and enter the correct email address."
+      }
+    }
+  },
+  "password": {
+    "label": "Password",
+    "forgot": "Forgot password?",
+    "placeholder": "Enter your password...",
+    "hint": "Please enter using number and capital, small letters which are combined and more than eight letters.",
+    "error": {
+      "format": "Please enter using number and capital, small letters which are combined and more than eight letters.",
+      "required": "Enter password"
+    }
+  },
+  "login": {
+    "error": "Invalid user name or password!"
+  },
+  "action": {
+    "activate": "Activate",
+    "login": "LOG IN",
+    "register": "Register",
+    "search": "Search",
+    "submit": "Submit"
+  },
+  "error": {
+    "maxlength": "Please enter {{field}}",
+    "required": "Please enter.",
+    "format": "Format does not match."
+  }
+}

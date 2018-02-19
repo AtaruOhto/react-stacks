@@ -36,7 +36,7 @@ module.exports = {
         path: BUNDLE_OUTPUT_PATH
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.js'],
+        extensions: ['.ts', '.tsx', '.js', 'json'],
         modules: [
             path.resolve(__dirname, path.resolve(path.join('front'))),
             "node_modules"

@@ -1,0 +1,36 @@
+{
+  "top": {
+    "title": "React Enterprise Boilerplate",
+    "description": ""
+  },
+  "activation": {
+    "index": {
+      "title": "アカウント登録",
+      "description": "アカウントの登録を行います。"
+    },
+    "start": {
+      "title": "アカウント登録開始",
+      "description": "アカウント登録手続きを開始します。"
+    },
+    "prompt": {
+      "title": "認証用メール送信",
+      "description": "認証のためのメールを送信しました。"
+    },
+    "verify": {
+      "title": "アカウントのメールアドレス認証",
+      "description": "アカウント登録のために送信されたメールアドレスの認証を行います。"
+    }
+  },
+  "login": {
+    "title": "ログイン",
+    "description": "ログインページ"
+  },
+  "globisMembers": {
+    "title": "グロービスのメンバー",
+    "description": "グロービスの開発メンバーの面々です。"
+  },
+  "usersSearch": {
+    "title": "ユーザー検索",
+    "description": "GitHub ユーザーを名前で検索します。"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "activation": {
+    "index": {
+      "prompt": "Now let's activate your account.",
+      "attention": "Your account has not been activated yet.",
+      "request": "Please set your password to start."
+    },
+    "start": {
+      "prompt": "Here begin the activation of your account.",
+      "attention": "Need to verify your email address for activation.",
+      "request": "Please input your email address you have used when applying."
+    },
+    "prompt": {
+      "prompt": "Sent an e-mail for verification",
+      "attention": "We have sent you an email to {{email}} for verification your email address. By clicking the link described in the mail body, your email address will be verified.",
+      "request": "Please note that the link page will expire you do not visit within an hour.",
+      "error": "An unexpected error occurred. Please do the same operation again."
+    },
+    "verify": {
+      "warning": "Your activation token has been expired already",
+      "description": "We’re sorry to bother you, but please request us to reissue a new tokenl by following the link below.",
+      "link": "link",
+      "linkDescription": "link description"
+    }
+  }
+}

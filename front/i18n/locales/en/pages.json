@@ -1,0 +1,36 @@
+{
+  "top": {
+    "title": "React Enterprise Boilerplate",
+    "description": ""
+  },
+  "activation": {
+    "index": {
+    "title": "Activation",
+    "description": "Activate your account."
+    },
+    "start": {
+      "title": "Start Account Activation",
+      "description": "Start your account activation."
+    },
+    "prompt": {
+      "title": "Sent an e-mail for verification",
+      "description": "Sent an e-mail for verification."
+    },
+    "verify": {
+      "title": "Verify Activation Token",
+      "description": "Verify your activation token."
+    }
+  },
+  "login": {
+    "title": "Login",
+    "description": "Login page."
+  },
+  "globisMembers": {
+    "title": "Globis Members",
+    "description": "Here are developer members of Globis."
+  },
+  "usersSearch": {
+    "title": "Users Search",
+    "description": "You can search GitHub users with their name."
+  }
+}

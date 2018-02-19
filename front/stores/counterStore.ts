@@ -1,25 +1,25 @@
 import {createStore, applyMiddleware, compose} from 'redux'
-import {counterRouterMiddleware} from "router/couterRouter";
 import rootReducer from 'reducers/index'
-import {setUpReactDevelopmentTool} from 'helpers/reactDevTool'
+import { composeWithDevTools } from 'redux-devtools-extension';
 import {counterSagaMiddleware} from 'sagas/counterSaga'
 
 const initialState = {};
-const enhancers: Array<Function> = [];
-const middleware = [
-    counterSagaMiddleware,
-    counterRouterMiddleware
-];
 
-setUpReactDevelopmentTool(enhancers);
+const composeMiddleware = () => {
+    const middleware = [
+        counterSagaMiddleware
+    ];
 
-const composedEnhancers = compose(
-    applyMiddleware(...middleware),
-    ...enhancers
-);
+    const composed = compose(
+        applyMiddleware(...middleware)
+    );
+
+    const composeWithReduxDevTool = composeWithDevTools({/* Options */});
+    return process.env.NODE_ENV === 'production' ? composed : composeWithReduxDevTool(composed);
+};
 
 export const counterStore = createStore(
     rootReducer,
     initialState,
-    composedEnhancers
+    composeMiddleware()
 );

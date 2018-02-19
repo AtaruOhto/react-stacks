@@ -5,7 +5,7 @@ import actionTypes from 'actionTypes/index'
 export const counterSagaMiddleware = createSagaMiddleware();
 
 const sampleAsyncFunction = () => {
-    return new Promise((resolve, reject) => {
+    return new Promise<null>((resolve, reject) => {
         setTimeout(() => {
             resolve(null)
         }, 3000)

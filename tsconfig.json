@@ -1,18 +1,13 @@
 {
   "compilerOptions": {
-    "baseUrl": "./front",
-    "module": "es2015",
-    "moduleResolution": "node",
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES5",
+    "alwaysStrict": true,
+    "baseUrl": "./front",
     "experimentalDecorators": true,
-    "noImplicitAny": true,
-    "noUnusedLocals": true,
-    "sourceMap": false,
+    "importHelpers": true,
     "inlineSourceMap": true,
     "inlineSources": true,
-    "pretty": true,
-    "importHelpers": true,
     "jsx": "react",
     "lib": [
       "dom",
@@ -21,6 +16,18 @@
       "es2015.promise",
       "es2015.iterable"
     ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "target": "ES5",
     "typeRoots": ["../node_modules/@types"]
   },
   "exclude": [

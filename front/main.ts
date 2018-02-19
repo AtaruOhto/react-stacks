@@ -1,15 +1,12 @@
-import {IRouterClassCallbackDefinitions, RouteScriptExecutor} from "helpers/routeScriptExecutor/routeScriptExecutor";
-import {renderIndex} from "./index";
+/// <reference types="node" />
+declare global {interface Window {devToolsExtension: any;}}
 
-const htmlClassList = document.querySelector('html').classList;
-const hookAndCallbacks: IRouterClassCallbackDefinitions = [
-    {
-        selectors: ["react-hook-index"],
-        callback: () => {
-            renderIndex();
-        }
-    }
-];
+import { PageScriptLoader } from "utils/routeScriptExecutor/routeScriptExecutor";
+import { pageScripts } from 'config/page'
+const htmlElem = document.querySelector('html');
 
-const callback = new RouteScriptExecutor(htmlClassList, hookAndCallbacks).getCorrespondingCallback();
-if(callback) { callback(); }
+if(htmlElem) {
+    const htmlClassList = htmlElem.classList;
+    const callback = new PageScriptLoader(htmlClassList, pageScripts).loadPageScript();
+    if(callback) { callback(); }
+}

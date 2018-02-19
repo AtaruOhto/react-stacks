@@ -10,7 +10,6 @@ const App = () => (
       <Link to={HOME_ROUTE}>Home</Link>
       <Link to={ABOUT_ROUTE}>About</Link>
     </header>
-
     <main>
       <Route exact path={HOME_ROUTE} component={Home} />
       <Route exact path={ABOUT_ROUTE} component={About} />

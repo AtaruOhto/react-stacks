@@ -1,0 +1,42 @@
+{
+  "hoge": "hogehogehogehoge",
+  "username": {
+    "label": "ユーザー名"
+  },
+  "email": {
+    "label": "メールアドレス",
+    "placeholder": "メールアドレスを入力...",
+    "error": {
+      "format": "メールアドレスの形式が正しくありません",
+      "verification": {
+        "header": "あらかじめ申請されたメールアドレスと一致しません",
+        "content": "もう一度ご確認の上、正しいメールアドレスをご入力ください。"
+      }
+    }
+  },
+  "password": {
+    "label": "パスワード",
+    "forgot": "パスワードを忘れた方",
+    "placeholder": "パスワードを入力...",
+    "hint": "8文字以上でアルファベットの大文字・小文字、数字を必ず一度は使ってください",
+    "error": {
+      "format": "半角8文字以上で、数字・英大文字・英小文字を必ず使ってください",
+      "required": "パスワードを入力してください"
+    }
+  },
+  "login": {
+    "error": "メールアドレスまたはパスワードが違います"
+  },
+  "action": {
+    "activate": "登録を実行する",
+    "login": "ログイン",
+    "register": "登録する",
+    "search": "検索",
+    "submit": "送信"
+  },
+  "error": {
+    "maxlength": "{{length}}文字以内で入力してください",
+    "required": "入力してください",
+    "format": "入力フォーマットが一致しません"
+  }
+}
